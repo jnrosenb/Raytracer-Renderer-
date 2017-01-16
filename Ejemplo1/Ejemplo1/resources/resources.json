@@ -1,0 +1,147 @@
+{
+  "__type__": "resources",
+  "materials": [
+        {
+            "__type__": "brdf_material",
+            "name": "red_lambert",
+            "color": [1,0,0],
+            "brdfParams": {},
+            "brdf": "lambert",
+            "use_for_ambient": true
+        },
+        {
+            "__type__": "brdf_material",
+            "name": "blue_lambert",
+            "color": [0,0,1],
+            "brdfParams": {},
+            "brdf": "lambert",
+            "use_for_ambient": true
+        },
+        {
+            "__type__": "brdf_material",
+            "name": "green_lambert",
+            "color": [0,1,0],
+            "brdfParams":{},
+            "brdf": "lambert",
+            "use_for_ambient": true
+        },
+        {
+            "__type__": "brdf_material",
+            "name": "yellow_lambert",
+            "color": [1,1,0],
+            "brdfParams":{},
+            "brdf": "lambert",
+            "use_for_ambient": true
+        },
+        {
+            "__type__": "brdf_material",
+            "name": "white_lambert",
+            "color": [1,1,1],
+            "brdfParams":{},
+            "brdf": "lambert",
+            "use_for_ambient": true
+        },
+        {
+            "__type__": "brdf_material",
+            "name": "gray_lambert",
+            "color": [0.2,0.2,0.2],
+            "brdfParams":{},
+            "brdf": "lambert",
+            "use_for_ambient": true
+        },
+        {
+            "__type__": "brdf_material",
+            "name" : "white_bph_100",
+            "color": [1,1,1],
+            "brdfParams":
+            {
+              "shininess": 100
+            },
+            "brdf": "blinnPhong"
+        },
+        {
+            "__type__": "brdf_material",
+            "name" : "white_bph_1000",
+            "color": [1,1,1],
+            "brdfParams":
+            {
+              "shininess": 1000
+            },
+            "brdf": "blinnPhong"
+        },
+		{
+            "__type__": "brdf_material",
+            "name" : "blue_bph_1000",
+            "color": [0,0,1],
+            "brdfParams":
+            {
+              "shininess": 1000
+            },
+            "brdf": "blinnPhong"
+        },
+		{
+            "__type__": "reflective_material",
+            "name" : "white_mirror",
+            "color": [1,1,1]
+        },
+		{
+            "__type__": "reflective_material",
+            "name" : "white_glossy_mirror",
+            "color": [1,1,1],
+			"glossyFactor": 0.1
+        },
+		{
+            "__type__": "reflective_material",
+            "name" : "gray_mirror",
+            "color": [0.5,0.5,0.5]
+        },
+		{
+            "__type__": "reflective_material",
+            "name" : "gold_mirror",
+            "color": [0.75,0.6,0]
+        },
+		{
+            "__type__": "dielectric_material",
+            "name" : "water",
+            "color": [0.75,0.75,0.75],
+			"attenuation": [10, 10, 10],
+			"refraction_index": 1.3
+        },
+		{
+            "__type__": "dielectric_material",
+            "name" : "water",
+            "color": [0.75,0.75,0.75],
+			"attenuation": [0, 0, 0],
+			"refraction_index": 1.1
+        },
+		{
+            "__type__": "dielectric_material",
+            "name" : "helium",
+            "color": [1,1,1],
+			"attenuation": [0, 0, 0],
+			"refraction_index": 1.025
+        },
+		{
+            "__type__": "dielectric_material",
+            "name" : "helium_attenuated",
+            "color": [1,1,1],
+			"attenuation": [0.1, 0.1, 0.1],
+			"refraction_index": 1.025
+        },
+		{
+            "__type__": "dielectric_material",
+            "name" : "air",
+            "color": [1,1,1],
+			"attenuation": [0, 0, 0],
+			"refraction_index": 1.0
+        },
+		{
+            "__type__": "dielectric_material",
+            "name" : "air_attenuated",
+            "color": [1,1,1],
+			"attenuation": [2, 2, 2],
+			"refraction_index": 1.0
+        }
+		
+    ]
+}
