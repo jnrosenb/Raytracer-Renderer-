@@ -534,7 +534,7 @@ namespace raytracer
         int ref_rec = (int)Convert.ToSingle(scene.Parameters["maxReflectionRecursions"]);
         if (closest_obj != null && (reflex_recursions < 0 || reflex_recursions > 0))
         {
-            tuple_3 new_d = Vectores.Normalize(d + r_reflex);
+            tuple_3 new_d = Vectores.Normalize(r_reflex);
             tuple_3 new_obj_point = q_reflex + closest_t * r_reflex;
 
             if (reflex_recursions < 0)
@@ -546,10 +546,6 @@ namespace raytracer
         }
         else
         {
-            if (obj.GetType() == typeof(Sphere))
-            {
-                int a = 0;
-            }
             //Este seria el caso en que no choca con nada, por lo que refleja la luz de fondo:
             List<float> bgc = ((List<object>)scene.Parameters["background_color"]).Select(Convert.ToSingle).ToList();
             obj_reflection_color = new List<float> { bgc[0] * reflective.color[0], bgc[1] * reflective.color[1], bgc[2] * reflective.color[2] };
